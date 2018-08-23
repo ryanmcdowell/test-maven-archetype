@@ -13,7 +13,7 @@ install:
 # TODO: Explain
 cache:
   directories:
-  - "$HOME/.m2/repository"
+  - $HOME/.m2
 
 # Build script
 script: mvn clean verify
