@@ -1,8 +1,19 @@
-# Sets the language for the build
+# Force Java 8
 language: java
+jdk:
+- openjdk8
 
-# Uses the default infrastructure
+# Run on the standard infrastructure
 sudo: false
 
-# The command to execute the build
+# Skips the install step
+install:
+- true
+
+# TODO: Explain
+cache:
+  directories:
+  - "$HOME/.m2/repository"
+
+# Build script
 script: mvn clean verify
