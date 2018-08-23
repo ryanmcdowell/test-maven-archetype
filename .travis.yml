@@ -1,0 +1,8 @@
+# Sets the language for the build
+language: java
+
+# Uses the default infrastructure
+sudo: false
+
+# The command to execute the build
+script: mvn clean verify
